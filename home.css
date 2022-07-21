@@ -1,8 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 #image-banner>img {
     width: 100%;
     border-bottom: 1px solid black;
 }
 
 body {
-    height: 10000px;
+    height: 500vh;
+}
+
+#image-banner+div {
+    margin-top: 75px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.product-list {
+    height: 300px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll {
+    height: 300px;
+    /* border: 2px solid green; */
+    width: 2000px;
+    display: flex;
+}
+
+.product-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.scroll>div {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+}
+
+.scroll>div>h3 {
+    bottom: -5px;
+    font-weight: 400;
+    left: 100%;
+    line-height: 1;
+    padding: 8px;
+    position: absolute;
+    text-transform: uppercase;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    width: 300px;
+    font-size: 23px;
+}
+
+.scroll>img {
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.product-list-2 {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.product-list-2::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+
+.product-list-2>div {
+    display: flex;
+    width: 4360px;
+    height: 365px;
+    border-top: 1px solid black;
+}
+
+.product-list-2>div>div {
+    border-right: 1px solid black;
+    width: 436px;
+    height: 100%;
+}
+
+.based {
+    background-color: #f5f4f2;
+}
+
+.product-list-2 p {
+    font-size: 70px;
+    letter-spacing: -2px;
+    margin: 30px;
+}
+
+.product-list-2 img {
+    position: relative;
+    height: 262px;
+    width: 363px;
+    left: 72px;
+    top: 103px;
+}
+
+.product-list-2 h3 {
+    position: relative;
+    top: 30px;
+    padding-left: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.count8>div {
+    width: 3488px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid black;
+    margin-bottom: 60px;
+}
+
+#product-features{
+    border: 1px solid red;
+}
+
+#features{
+    border: 1px solid blue;
 }
