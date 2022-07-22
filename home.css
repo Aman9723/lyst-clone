@@ -129,15 +129,133 @@ body {
     width: 3488px;
 }
 
-.border-bottom{
+.border-bottom {
     border-bottom: 1px solid black;
     margin-bottom: 60px;
 }
 
-#product-features{
-    border: 1px solid red;
+#product-features {
+    border: 1px solid black;
+    display: flex;
+    height: auto;
 }
 
-#features{
-    border: 1px solid blue;
+#features {
+    border-right: 1px solid black;
+    width: 70%;
+    height: 550px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f5f4f2;
+    align-items: center;
+}
+
+#features>ul {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#features li {
+    width: 25%;
+    height: 80%;
+    margin: auto;
+}
+
+#features h2 {
+    font-size: 110px;
+}
+
+#features h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: .01em;
+}
+
+#features p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#signup {
+    width: 30%;
+    background-color: #cafc4f;
+}
+
+
+#signup>div {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition-duration: 0.5s;
+}
+
+#signup>div:hover {
+    background-color: #cbc2f5;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border-right: 1.5px solid black;
+}
+
+#signup p {
+    font-size: 45px;
+    margin-left: 30px;
+    letter-spacing: -2px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+#signup button {
+    margin-left: 30px;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    #features>ul {
+        width: 100%;
+    }
+
+    #signup > div{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    #product-features{
+        display: block;
+        overflow: scroll;
+        overflow: -moz-scrollbars-none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    #product-features::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    #features{
+        width: 1000px;
+        border-bottom: 1px solid black;
+    }
+
+    #signup{
+        height: auto;
+        width: 1000px;
+        height: 250px;
+    }
+
+    #signup > div{
+        width: 100%;
+    }
 }
