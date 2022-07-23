@@ -11,7 +11,6 @@ function visible(prev) {
     else {
         navbar.style.position = 'sticky';
     }
-    console.log(cur);
     return cur;
 }
 
