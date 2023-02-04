@@ -13,7 +13,7 @@
 
 To use this repo run:
 ```
-git clone https://github.com/Aman9723/usable-trouble-1944.git
-cd .\usable-trouble-1944\
+git clone https://github.com/Aman9723/lyst-clone.git
+cd .\lyst-clone\
 run index.html
 ```
